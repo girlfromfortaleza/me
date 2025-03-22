@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hub Profissional - Ada Roama da Costa</title>
+    <style>
+        :root {
+            --primary: #2A5C82;
+            --secondary: #4F8BB7;
+            --light: #F5F9FC;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: var(--light);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1500px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .profile {
+            width: 150px;       /* Largura proporcional a 3 unidades */
+            height: 200px;      /* Altura proporcional a 4 unidades */
+            border-radius: 0;   /* Remove o formato redondo */
+            object-fit: cover;  /* Mantém a proporção da imagem */
+            margin: 20px 0;     /* Mantém o espaçamento original */
+            border: 4px solid white;  /* Mantém a borda */
+            background: #fff;   /* Garante fundo branco caso a imagem tenha transparência */
+        }
+
+        .certificados-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            padding: 40px 0;
+        }
+
+        .certificado-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        .certificado-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .certificado-card h3 {
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .data {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+
+        .certificado-card small {
+    display: block;
+    margin-top: 12px;
+    color: #666;
+    font-size: 0.85em;
+    line-height: 1.4;
+         }
+
+        .contato {
+            text-align: center;
+            padding: 40px 0;
+            background: var(--primary);
+            color: white;
+        }
+
+        a {
+            color: var(--secondary);
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .certificados-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="111.jpeg" alt="Laura Mendes" class="profile">
+            <h1>Ada Roama da Costa</h1>
+            <p>Comprometida com o desenvolvimento profissional.<br>Pronta para contribuir e aprender.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="certificados-grid">
+            
+            <article class="certificado-card">
+                <h3>🎮 Introdução ao Game Design</h3>
+                <div class="data">
+                    Janeiro 2024 | Instituto CUCA<br>
+                    21h | Curso Presencial
+                </div>
+                <p>Certificação em fundamentos para programação e desenvolvimento de jogos eletrônicos utilizando o Construct 3</p>
+                <small>Realizado pela Prefeitura de Fortaleza através da Coordenadoria de Juventude</small>
+                <a href="certificado-design.jpg" target="_blank">Ver Certificado</a>
+            </article>
+
+            <article class="certificado-card">
+                <h3>💻 Informática Básica</h3>
+                <div class="data">
+                    Janeiro 2025 | Instituto CUCA<br>
+                    21h | Curso Presencial
+                </div>
+                <p>Certificação em fundamentos da informática e conhecimento em Windows 11, navegadores, hardwares e ferramentas digitais do mercado</p>
+                <small>Realizado pela Prefeitura de Fortaleza através da Coordenadoria de Juventude</small>
+                <a href="certificado-design.jpg" target="_blank">Ver Certificado</a>
+            </article>
+
+
+            <article class="certificado-card">
+                <h3>💻 Introdução a programação com HTML/CSS</h3>
+                <div class="data">
+                    Março 2023 | Instituto CUCA<br>
+                    24h | Curso Remoto
+                </div>
+                <p>Certificação em fundamentos de HTML/CSS e criações de websites</p>
+                <small>Realizado pela Prefeitura de Fortaleza através da Coordenadoria de Juventude</small>
+                <a href="certificado-design.jpg" target="_blank">Ver Certificado</a>
+            </article>
+
+            <article class="certificado-card">
+                <h3>☁️ Introdução à Cloud</h3>
+                <div class="data">
+                    Março 2023 | IFCE Fortaleza<br>
+                    3h | Minicurso Remoto
+                </div>
+                <p>Certificado de participação sobre conceitos básicos de computação em nuvem e aplicações práticas</p>
+                <small>Realizado pela Huawei Academy IFCE - Parceria para capacitação em tecnologias digitais</small>
+                <a href="certificado-cloud.jpg" target="_blank">Ver Certificado</a>
+            </article>
+
+            <article class="certificado-card">
+                <h3>💻 Programação Web com HTML/CSS</h3>
+                <div class="data">
+                    Agosto 2022 | Juventude Digital<br>
+                    18h | Curso Remoto
+                </div>
+                <p>Certificação em desenvolvimento com HTML/CSS pelo programa municipal de qualificação tecnológica</p>
+                <small>Juventude Digital: Programa da Prefeitura de Fortaleza vinculado à Fundação CITINOVA</small>
+                <a href="certificado-web.jpg" target="_blank">Ver Certificado</a>
+            </article>
+
+            <article class="certificado-card">
+                <h3>💻 Programação Web com HTML/CSS</h3>
+                <div class="data">
+                    Julho 2022 | Juventude Digital<br>
+                    18h | Curso Remoto
+                </div>
+                <p>Certificação em desenvolvimento com HTML/CSS pelo programa municipal de qualificação tecnológica</p>
+                <small>Juventude Digital: Programa da Prefeitura de Fortaleza vinculado à Fundação CITINOVA</small>
+                <a href="certificado-web.jpg" target="_blank">Ver Certificado</a>
+            </article>
+
+            <article class="certificado-card">
+                <h3>🎨 Design Gráfico</h3>
+                <div class="data">
+                    Setembro 2019 | Instituto CUCA<br>
+                    36h | Curso Presencial
+                </div>
+                <p>Certificação em fundamentos de design visual e ferramentas gráficas essenciais como Adobe Photoshop</p>
+                <small>Realizado pela Prefeitura de Fortaleza através da Coordenadoria de Juventude</small>
+                <a href="certificado-design.jpg" target="_blank">Ver Certificado</a>
+            </article>
+
+            <article class="certificado-card">
+                <h3>🔍🌱 Feira do Conhecimento</h3>
+                <div class="data">
+                    21-24 Novembro 2018 | Secitece<br>
+                    32h | Presencial
+                </div>
+                <p>Certificado de participação na 2ª edição do evento estadual de ciência e tecnologia</p>
+                <small>Realização do Governo do Ceará através da Secretaria da Ciência, Tecnologia e Educação Superior em parceria com o Instituto Centec</small>
+                <a href="certificado-feira.jpg" target="_blank">Ver Certificado</a>
+            </article>
+
+        </section>
+    </main>
+
+    <section class="contato">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <p>Estou aberta a novas oportunidades e colaborações!</p>
+            <p>📧 <a href="mailto:contato.lauramendes@example.com" style="color: white;">contato.lauramendes@example.com</a></p>
+        </div>
+    </section>
+</body>
+</html>
